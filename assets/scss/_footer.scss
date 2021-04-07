@@ -1,0 +1,129 @@
+
+
+
+/*===========================
+      11.FOOTER css 
+===========================*/
+
+.footer_area{
+    background-color: $heading-color;
+}
+
+.footer_title{
+    color: $white;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.footer_info{
+    & .info{
+        margin-top: 35px;
+        
+        & li{
+            font-size: 18px;
+            color: $white;
+            margin-top: 10px;
+        }
+    }
+}
+
+
+.footer_link{
+    & .link{
+        margin-top: 20px;
+        
+        & li{
+            & a{
+                font-size: 18px;
+                color: $white;
+                margin-top: 10px;
+                @include transition(.3s);
+
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+
+.footer_social{
+    & .social{
+        margin-top: 20px;
+        
+        & li{
+            display: inline-block;
+            
+            & + li{
+                margin-left: 15px;
+            }
+            
+            & a{
+                background-color: rgba($white, 0.1);
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                font-size: 16px;
+                color: $white;
+                border-radius: 50%;
+                @include transition(.3s);
+
+                &:hover {
+                    background: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+
+.footer_copyright{
+    & .copyright{
+        border-top: 1px solid rgba($white, 0.58);
+        padding: 25px 0;
+        
+        & p{
+            color: $white;
+
+            a {
+                color: $white;
+                @include transition(.3s);
+
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+/*===== BACK TO TOP =====*/
+
+.back-to-top{
+    font-size: 20px;
+    color: $white;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background-color: $theme-color;
+    text-align: center;
+    z-index: 99;
+    @include transition(0.3s);
+    display: none;
+    
+    &:hover{
+        color: $white;
+        background-color: $theme-color;
+    }
+}
+
+
+
+
+

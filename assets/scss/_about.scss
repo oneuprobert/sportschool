@@ -1,0 +1,80 @@
+
+
+
+/*===========================
+      04.ABOUT css 
+===========================*/
+
+.about_area{}
+
+.about_wrapper{
+    position: relative;
+    padding: 50px 0;
+    
+    @media #{$md}{
+        padding: 0;
+    }
+    
+    & .about_bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        border-bottom-right-radius: 80px;
+    }
+}
+
+.about_content{
+    & .about_title{
+        font-size: 70px;
+        font-style: italic;
+        background-color: $white;
+        
+        @media #{$lg}{
+            font-size: 60px;
+        }
+        @media #{$md}{
+            font-size: 50px;
+        }
+        @media #{$xs}{
+            font-size: 30px;
+        }
+        @media #{$sm}{
+            font-size: 40px;
+        }
+    }
+    
+    & .about_content_wrapper{
+        max-width: 530px;
+        margin-left: auto;
+        padding-top: 40px;
+        padding-left: 30px;
+        
+        @media #{$lg}{
+            max-width: 460px;
+        }
+        @media #{$md}{
+            max-width: none;
+            padding-left: 0;
+        }
+        @media #{$xs}{
+            max-width: none;
+            padding-left: 0;
+        }
+        
+        & .main-btn{
+            margin-top: 35px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
